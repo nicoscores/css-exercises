@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 img {
@@ -10,7 +11,27 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  /*  display:flex;               not needed
+  justify-content:center;  */
+  margin-bottom: 32px
 }
+
+.contain {
+  display:flex;
+  justify-content:center;
+  gap: 52px;
+}
+.one,
+.two,
+.three,
+.four {     /*   if all values are the same use single var.   */
+  max-width: 200px;
+/*  display: flex;    didnt need.  done  in contain
+  flex-flow: column;
+  align-items:center;
+  flex: auto  */
+}
+
 
 /* do not edit this footer */
 .footer {

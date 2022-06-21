@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 12px;
+  gap: 12px;
 }
 
 .icon {
@@ -27,13 +30,43 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
+  min-width: 42px;
   height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Solution is flex-shrink:0 not min-width */
+
 }
+
+/* .right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  
+WRONG Approach - didnt need to split into more containers. joining the containers in the html
+and create a new container right side. and doing rest in header and margin on .text.
+*/
+
+
+.header {
+  display: flex;
+  font-size: larger;
+  font-weight: bold;
+  /*better solution */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.text {
+  margin-bottom: 12px;
+}
+
 
 .close-button {
   background: #eee;

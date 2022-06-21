@@ -1,0 +1,16 @@
+.odds {
+ background-color: rgb(249, 189, 189);
+ font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+.odds.cool {
+    font-size: 24px;
+}
+#num2 {
+    color: rgb(46, 46, 237);
+    font-size: 36px;
+}
+#num4 {
+    background-color: rgb(132, 222, 132);
+    font-size: 24px;
+    font-weight: bold;
+}
